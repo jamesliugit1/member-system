@@ -1,0 +1,279 @@
+/* header、footer、手機左側漢堡選單、右側會員選單的css 不包含會員登入視窗*/
+
+header * {
+    padding: 0;
+    margin: 0;
+    /* 消除boostrap預設值 */
+}
+header {
+    width: 100%;         
+    height: 100px;
+    background-color: #b1d660;
+    padding: 0 70px 0 35px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 8;
+}
+header.sea {
+    background-color: #ade8f4;
+}
+header a:visited,
+header a:hover,
+header a:active,
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+}
+.navbar li {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    list-style: none;
+}
+.navbar li:not(:last-child) {
+    border-right: 2px solid #fff;
+}
+.navbar a {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+/* logo位置 */
+a.nav-logo {
+    width: 120px;
+    position: absolute;
+    left: calc(50% - 60px);
+}
+/* 會員和購物車 */
+.member-cart {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.profile-icon {
+    position: relative;
+}
+img#profile-icon{
+    width: 32px;
+    cursor: pointer;
+}
+img.cart-icon {
+    width: 40px;
+    margin-left: 30px;
+}
+img.menu-icon {
+    width: 24px;
+    display: none;
+}
+footer {
+    height: 300px;
+    width: 100%;
+    background: url(./SVG/nav-footer/logo-white-img.svg) center bottom 67px/ 120px auto no-repeat, url(./SVG/nav-footer/mountain01.svg) 2% 0/ 216px auto no-repeat, url(./SVG/nav-footer/mountain02.svg) 31% 9%/ 216px auto no-repeat, url(./SVG/nav-footer/mountain03.svg) right 4% top 9%/ 216px auto no-repeat, url(./SVG/nav-footer/background_1.svg) 0 bottom/ auto 200px repeat-x, transparent;
+}
+footer.sea {
+    height: 200px;
+    background: url(./SVG/nav-footer/logo-white-img.svg) center bottom 45px/ 120px auto no-repeat, url(./SVG/nav-footer/sea-footer-img_1.svg) 0 bottom/ auto 200px repeat-x;        
+}
+@media screen and (max-width:991.99px) {
+    header {
+        height: 50px;
+        padding: 0 15px;
+    }
+    .navbar {
+        display: none;
+    }
+    img.menu-icon {
+        display: block;
+    }
+    /* logo位置 */
+    a.nav-logo {
+        width: 60px;
+        left: calc(50% - 30px);
+    }
+    img#profile-icon {
+        width: 24px;
+    }
+    img.cart-icon {
+        width: 30px;
+        margin-left: 15px;
+    }
+    footer {
+        height: 166px;
+        background: url(./SVG/nav-footer/logo-white-img.svg) center bottom 34px/ 60px auto no-repeat, url(./SVG/nav-footer/mountain01.svg) 2% 5%/ 130px auto no-repeat, url(./SVG/nav-footer/mountain03.svg) right 4% top 9%/ 130px auto no-repeat, url(./SVG/nav-footer/background_1.svg) 0 bottom/ auto 100px repeat-x;
+    }
+    footer.sea {
+        height: 100px;
+        background: url(./SVG/nav-footer/logo-white-img.svg) center bottom 26px/ 60px auto no-repeat, url(./SVG/nav-footer/mobile-sea-footer.svg) 0 bottom/ auto 100px repeat-x;
+    }
+}
+
+/* 左側選單css */
+.mobile-navbar {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 15px 0 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #727886;
+    display: none;
+}
+.mobile-navbar-container {
+    height: 764px;
+    overflow: auto;
+}
+.mobile-navbar span {
+    margin-left: auto;
+}
+img.cross {
+    width: 24px;
+    margin-left: auto;
+    padding-right: 5px;
+}
+.mobile-navbar-list {
+    margin-top: 60px;
+    position: relative;
+}
+.mobile-navbar-list ul {
+    display: none;
+}
+.mobile-navbar-list li, label.nav-item {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+label.nav-item img {
+    width: 22px;
+    transition: .25s;
+}
+input.none {
+    display: none;
+}
+.layer1 > label{
+    padding-left: 45px;
+}
+.layer2 > label, .layer2 > li{
+    padding-left: 60px;
+}
+.layer3 > label, .layer3 > li {
+    padding-left: 75px;
+}
+input#equiptment:checked + label {
+    background-color: #b1d660;
+}
+input#rent:checked + label,
+input#purchase:checked + label {
+    background-color: #ededed;
+}
+input#climb:checked + label,
+input#water:checked + label {
+    background-color: #abadb2;
+    color: #fff;
+}
+input:checked + label  img {
+    transform: rotate(180deg);
+}
+
+.memeber_name_style {
+    font-size: 12px;
+  }
+/* 右側選單css */
+.mobile-member {
+    position: absolute;
+    width: 180px;
+    font-weight: 300;
+    padding-top: 17px;
+    color: #707070;
+    background-color: #fff;
+    border: .5px solid #ddd;
+    border-radius: 9px;
+    box-shadow: 0 3px 6px #ddd;
+    right: -10px;
+    top: 40px;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+.mobile-member > img {
+    position: absolute;
+    height: 13px;
+    top: -12px;
+    right: 10px;
+    z-index: 9;
+}
+.mobile-member-list li {
+    height: 45px;
+    line-height: 45px;
+}
+.mobile-member-list li:hover {
+    background-color: #b1d66086;
+}
+.mobile-member-top {
+    display: flex;
+    align-items: center;
+    padding: 0 0px;
+    justify-content: space-around;
+}
+.mobile-member-top img{
+    width: 30px;
+}
+.mobile-member-top > a {
+    font-size: 14px;
+}
+.mobile-member-list {
+    padding: 4px 0;
+}
+@media screen and (min-width:991.99px) {
+    .mobile-member {
+        top: 100px;
+        right: 8px;
+        transform: scale(1.3);
+    }
+}
+
+button.btn-member {
+    background: url(./SVG/nav-footer/Profile.svg) center center/30px auto no-repeat, transparent;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    position: relative;
+    /* 為了和漢堡選單結合 */
+}
+button.btn-cart {
+    background: url(./SVG/nav-footer/cart.svg) center center/40px auto no-repeat, transparent;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 0;  
+}
+button.btn-member:focus, button.btn-cart:focus {
+      outline: 0;
+      /* 消除boostrap效果 */
+}
+@media screen and (max-width:991.99px) {
+      /* RWD */
+    button.btn-member {
+        background: url(./SVG/nav-footer/Profile.svg) center center/24px auto no-repeat, transparent;
+        width: 24px;
+        height: 24px;
+    }
+    button.btn-cart {
+        background: url(./SVG/nav-footer/cart.svg) center center/30px auto no-repeat, transparent;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+}
+

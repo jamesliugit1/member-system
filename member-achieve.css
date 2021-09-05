@@ -1,0 +1,304 @@
+.member-container {
+  background: #fff;
+}
+.img > img {
+  object-fit: contain;
+}
+.gold-trophy,
+.sliver-trophy,
+.copper-trophy {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.achieve-box {
+  width: 360px;
+  height: 165px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 15px 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+}
+.achieve-bottom > a:hover b {
+  font-weight: 900;
+  text-decoration: underline;
+}
+.achieve-bottom img {
+  width: 20px;
+  margin: 0 4px 0 15px;
+}
+.copper-trophy .achieve-bottom p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.achieve-box > img {
+  width: 60px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.achieve-img {
+  width: 120px;
+  height: 165px;
+  flex-shrink: 0;
+}
+.sliver-h2,
+.copper-h2 {
+  margin-top: 60px;
+}
+.gold-trophy .achieve-img {
+  background: var(--grass);
+  position: relative;
+}
+.sliver-trophy .achieve-img {
+  background: url(./SVG/member-system/trophy-none.svg) center center/ 88px auto
+    no-repeat var(--grass);
+}
+.copper-trophy .achieve-img {
+  background: url(./SVG/member-system/trophy-none.svg) center center/ 88px auto
+    no-repeat var(--grass);
+}
+.achieve-img img {
+  width: 90px;
+  position: absolute;
+  top: calc(50% - 49px);
+  left: calc(50% - 45px);
+  opacity: 0.5;
+}
+img.shine {
+    width: 30px;
+    animation: shining 2s infinite;
+}
+@keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+img.shine:nth-child(2) {
+    top: 32%;
+    left: 72%;
+}
+img.shine:nth-child(3) {
+    top: 58%;
+    left: 54%;
+    animation-delay: .5s;
+}
+img.shine:nth-child(4) {
+    top: 42%;
+    left: 10%;
+    animation-delay: .75s;
+}
+.achieve-main {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.achieve-main h3 {
+  margin-bottom: 4px;
+}
+.achieve-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.achieve-bottom a:nth-child(2), .achieve-bottom a:nth-child(3) {
+  width: fit-content;
+  align-self: flex-end;
+}
+.achieve-box button {
+  width: 100px;
+  height: 35px;
+  align-self: flex-end;
+  margin-top: 4px;
+}
+#achieve-round {
+  order: 2;
+}
+#achieve-jade {
+  order: 1;
+}
+#achieve-lake {
+  order: 3;
+}
+@media screen and (min-width: 991.99px) {
+  /* .member-container {
+    background: url(./SVG/member-system/hike1.svg) left top/ 100% auto no-repeat;
+  } */
+  .member-container h2 {
+    text-align: left;
+    padding-left: 36px;
+  }
+  .sliver-h2,
+  .copper-h2 {
+    margin-top: 72px;
+  }
+  .achieve-box {
+    border-radius: 10px;
+  }
+  .gold-trophy .achieve-box {
+    width: 100%;
+    height: 260px;
+    overflow: visible;
+    margin-top: 72px;
+  }
+  .sliver-trophy .achieve-box {
+    width: 280px;
+    height: 450px;
+    display: block;
+    text-align: center;
+  }
+  .sliver-trophy .achieve-bottom a {
+    align-self: center;
+  }
+  .copper-trophy .achieve-box {
+    width: 498px;
+    height: 200px;
+  }
+  .achieve-box > img {
+    width: 95px;
+    top: 15px;
+    right: 15px;
+  }
+  .gold-trophy {
+    display: block;
+    padding: 0 30px;
+  }
+  .copper-trophy {
+    justify-content: space-between;
+  }
+  .gold-trophy .achieve-img {
+    width: 300px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .sliver-trophy .achieve-img {
+    width: 100%;
+    height: 210px;
+    background: url(./SVG/member-system/trophy-none.svg) center center/ 155px
+      auto no-repeat var(--grass);
+  }
+  .copper-trophy .achieve-img {
+    width: 200px;
+    height: 100%;
+    background: url(./SVG/member-system/trophy-none.svg) center center/ 120px
+      auto no-repeat var(--grass);
+  }
+  .achieve-img img {
+    width: 248px;
+    bottom: 30px;
+    top: auto;
+    left: calc(50% - 124px);
+    opacity: 1;
+  }
+  img.shine {
+    width: 64px;
+  }
+  img.shine:nth-child(2) {
+    top: 12%;
+  }
+  img.shine:nth-child(3) {
+    top: 58%;
+  }
+  img.shine:nth-child(4) {
+    top: 22%;
+  }
+  .gold-trophy .achieve-main {
+    padding: 15px 30px;
+  }
+  .sliver-trophy .achieve-main {
+    padding: 15px;
+    height: 240px;
+  }
+  .copper-trophy .achieve-main {
+    padding: 15px;
+  }
+  .gold-trophy button {
+    width: 200px;
+    height: 60px;
+  }
+  .sliver-trophy button,
+  .copper-trophy button {
+    width: 114px;
+    height: 42px;
+  }
+  .sliver-trophy button {
+    align-self: center;
+  }
+  #achieve-round {
+    transform: translateY(-36px);
+  }
+}
+.achieve-box.completed,
+.achieve-box.completed,
+.achieve-box.completed {
+  background: linear-gradient(to right, var(--grass), var(--green));
+  color: #fff;
+  animation: pulse 1s infinite;
+}
+.gold-trophy .achieve-box.completed .achieve-img {
+  background: transparent;
+}
+.gold-trophy .achieve-box.completed .achieve-img img {
+  opacity: 1;
+}
+.sliver-trophy .achieve-box.completed .achieve-img {
+  background: url(./SVG/member-system/sliver.svg) center center/ 88px auto
+    no-repeat;
+}
+
+.copper-trophy .achieve-box.completed .achieve-img {
+  background: url(./SVG/member-system/copper.svg) center center/ 88px auto
+    no-repeat;
+}
+.achieve-box.completed:hover {
+    animation: none;
+    transform: scale(1.1);
+}
+.achieve-box.completed .btn-yellow:hover {
+    opacity: 1;
+    background-color: #fcbc63;
+}
+.achieve-box.completed.recieved {
+    animation: none;
+}
+.achieve-box.completed.recieved {
+  animation: none;
+}
+.achieve-box.completed.recieved:hover {
+    transform: scale(1);
+}
+.btn-ach2 {
+  display: none;
+}
+button.btn-ach3 {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  cursor: default;
+}
+@media screen and (min-width: 991.99px) {
+  .sliver-trophy .achieve-box.completed {
+    background: linear-gradient(to bottom, var(--grass), var(--green));
+  }
+  .sliver-trophy .achieve-box.completed .achieve-img {
+    background: url(./SVG/member-system/sliver.svg) center center/ 155px auto
+      no-repeat;
+  }
+  .copper-trophy .achieve-box.completed .achieve-img {
+    background: url(./SVG/member-system/copper.svg) center center/ 120px auto
+      no-repeat;
+  }
+}

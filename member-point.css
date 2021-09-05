@@ -1,0 +1,164 @@
+.member-container {
+  background: url(./SVG/member-system/point-sm.svg) left top/ 100% auto
+    no-repeat, #fff;
+  padding-top: 4px;
+}
+.img > img {
+  object-fit: contain;
+}
+.order-box:hover {
+  background-color: #b1d66033;
+}
+.member-container > h2 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+.mypoint {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.mypoint img{
+  width: 30px;
+  margin-right: 8px;
+}
+.member-container h2#mypoint {
+  font-weight: 900;
+}
+.point-cat {
+  margin-top: 60px;
+}
+.cat-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+.point-cat-item {
+  height: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cat-row img {
+  width: 22px;
+  margin-right: 8px;
+}
+.order-title .img {
+  width: 106px;
+  height: 90px;
+}
+.order-cols {
+  justify-content: space-between;
+}
+.order-col h2 {
+  color: var(--orange);
+  margin:0 8px 0 0;
+}
+.point-detail-box {
+    background-color: #fff;
+    border: .5px solid #eee;
+    border-radius: 3px;
+    margin: 30px 0;
+    box-shadow: 3px 3px 10px #eee;
+    text-align: center;
+    padding: 30px;
+}
+.point-detail-box > .img {
+    width: 270px;
+    height: 200px;
+    margin: 0 auto;
+}
+.point-detail-box h2, .point-detail-box h3 {
+    margin: 30px 0 15px 0;
+}
+.point-detail-box h2.mypoint {
+    display: flex;
+    align-items: center;
+    color: var(--orange);
+}
+.point-btn {
+  margin-top: 30px;
+}
+.point-btn button {
+    margin: 4px 15px;
+    width: 180px;
+    height: 40px;
+}
+.exchange-input {
+  text-align: left;
+  display: grid;
+  place-items: center;
+}
+article.ex1, article.ex2 {
+  display: none;
+}
+@media screen and (min-width: 991.99px) {
+    .member-container {
+        padding-top: 100px;
+    }
+    .mypoint {
+      margin-right: 16px;
+    }
+    .mypoint img{
+      width: 48px;
+    }
+    .point-cat {
+        margin-top: 120px;
+    }
+    .cat-row {
+        margin: 36px 0;
+    }
+    .point-cat-item {
+        height: 32px;
+    }
+    .cat-row img {
+        width: 64px;
+    }
+    .order-title .img {
+        width: 212px;
+        height: 115px;
+    }
+    .order-cols {
+        flex-direction: column;
+    }
+    .point-detail-box {
+        border-radius: 9px;
+        padding: 72px;
+        text-align: left;
+    }
+    .point-detail-box > .img {
+        width: 450px;
+        height: 300px;
+        margin: 0;
+    }
+    .point-detail-box h2, .point-detail-box h3{
+        text-align: left;
+        margin: 32px 0 16px 0;
+    }
+    article:nth-child(2) {
+        padding-top: 32px;
+        margin-bottom: 32px;
+    }
+    .point-btn {
+        margin-top: 32px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .point-btn button {
+      width: 200px;
+      height: 60px;
+  }
+    article h3.mypoint {
+      justify-content: unset;
+    }
+    .exchange-input {
+      display: flex;
+      align-items: flex-end;
+    }
+    .exchange-input input[type="text"] {
+      margin-right: 32px;
+    }
+}

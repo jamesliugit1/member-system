@@ -1,0 +1,282 @@
+.order-box {
+    border: .5px solid #eee;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 10px #eee;
+}
+.order-top {
+    padding: 15px 15px 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--grass);
+}
+.order-right {
+    text-align: end;
+}
+.order-main {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.order-main.sp:last-of-type {
+    border-bottom: 0;
+}
+.order-main.sp:only-of-type {
+    border: 0;
+}
+.order-main span {
+    color: #aaa;
+    margin-top: 2px;
+}
+.order-title > .img {
+    width: 106px;
+    height: 60px;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+.order-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.order-cols {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    flex-shrink: 0;
+}
+.order-button {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.order-button button {
+    margin-left: 8px;
+}
+.order-col > img {
+    width: 24px;
+    margin-right: 8px;
+}
+.order-col {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.order-col.rate-star > img {
+    cursor: pointer;
+}
+.order-col.upload {
+    margin: 0;
+}
+.order-col.upload > div {
+    background: url(./SVG/member-system/upload.svg) center center/ 50px auto no-repeat;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.order-col.upload > div:hover {
+    opacity: .5;
+}
+.detail-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+img.paid-icon {
+    height: 24px;
+}
+.order-right > img {
+    width: 22px;
+    transition: .25s;
+}
+.rotate180 {
+    transform: rotate(180deg);
+}
+article {
+    padding: 8px;
+}
+article p {
+    margin-top: 8px;
+}
+.qr {
+    display: grid;
+    place-items: center;
+    margin: 30px 0;
+} 
+img#qrCode {
+    margin-bottom: 8px;
+}
+.qr button {
+    width: 180px;
+    height: 40px;
+    margin: 15px 0 8px 0;
+}
+article > h3 {
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+    padding-bottom: 8px; 
+}
+table {
+    font-size: 14px;
+    margin: 8px;
+}
+table:not(:last-of-type) {
+    border-bottom: 1px solid #ccc;
+}
+tr {
+    height: 24px;
+}
+td {
+    width: 150px;
+}
+img.tracking {
+    width: 80%;
+}
+.tracking-overall {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.order-button.mr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.order-main.mr {
+    border: 0;
+}
+form.rate > h3 {
+    margin: 15px 30px 4px 0;
+    display: flex;
+    align-items: center;
+}
+label.rate-goods {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 8px;
+    cursor: pointer;
+    margin: 0;  
+}
+input[name="rate-goods"]:checked + label {
+    background-color: #b1d6607e;
+}
+.order-detail:not(.rent) {
+    display: none;
+}
+.rate1, .rate2, .reply1, .reply2 {
+    display: none;
+}
+.input-bank {
+    display: flex;
+    align-items: center;
+  }
+@media screen and (min-width:991.99px) {
+    .order-box {
+        border-radius: 9px;
+    }
+    .order-top {
+        padding: 32px 32px 16px 32px;
+        border-bottom: 6px solid var(--grass);
+    }
+    .order-main {
+        display: flex;
+        padding: 32px;
+        justify-content: space-between;
+    }
+    .order-main span {
+        margin-top: 4px;
+    }
+    .order-title > .img {
+        width: 212px;
+        height: 120px;
+        margin: 0 16px 0 0;
+    }
+    .order-button {
+        padding: 16px 32px;
+    }
+    .order-button button{
+        margin-left: 32px;
+    }
+    .order-col > img {
+        width: 36px;
+        margin-right: 16px;
+    }
+    .order-col {
+        margin-left: 45px;
+    }
+    img.paid-icon {
+        height: 45px;
+    }
+    .order-right > img {
+        width: 32px;
+    }
+    article {
+        padding: 32px;
+    }
+    article p {
+        margin-top: 16px;
+    }
+    article > h3 {
+        margin-top: 72px;
+        padding-bottom: 16px;
+    }
+    .qr {
+        margin-left: 64px;
+    } 
+    .qr button {
+        width: 200px;
+        height: 60px;
+        margin: 32px 0 8px 0;
+    }
+    .qr-article {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 64px;
+    }
+    .qr.rb {
+        place-items: end;
+    }
+    table {
+        font-size: 18px;
+        margin: 30px;
+    }
+    tr{
+        height: 40px;
+    }
+    td {
+        width: 300px;
+    }
+    form.rate > h3 {
+        margin: 32px 64px 16px 0;
+    }
+    label.rate-goods {
+        height: 128px;
+        line-height: 128px;
+        padding: 0 32px;
+    }
+    .order-col.upload > div {
+        background: url(./SVG/member-system/upload.svg) center center/ 100px auto no-repeat;
+        margin: 0 8px;
+    }
+}
+.reply-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.reply-btn button {
+    margin-top: 15px;
+    margin-left: 8px;
+}
+@media screen and (min-width:991.99px) {
+    .reply-paid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    .reply-btn {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .reply-btn button {
+        margin-top: 15px;
+        margin-left: 8px;
+    }
+}

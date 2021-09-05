@@ -1,0 +1,196 @@
+.coupon-cat {
+    display: flex;
+    justify-content: space-around;
+}
+.coupon-cat h3 {
+    width: 105px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    cursor: pointer;
+}
+.coupon-cat h3:nth-child(1) {
+    color: #fff;
+    background: url(./SVG/member-system/coupon-icon.svg) center center/ 100% auto no-repeat;
+}
+h3.coupon-cat2 {
+    padding-left: 8px;
+    margin: 15px 0 8px 0;
+}
+.coupon-cat2-box {
+    background-color: #fff;
+    border: .5px solid #ddd;
+    border-radius: 3px;
+    padding: 8px;
+}
+.coupon-card {
+    width: 301px;
+    height: 70px;
+    background: url(./SVG/member-system/coupon_2.svg) left top/ auto 70px no-repeat #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    transition: .15s;
+}
+.coupon-card:hover {
+    transform: scale(1.05);
+}
+.coupon-main {
+    padding: 4px 0 4px 80px;
+}
+div.coupon-main h2 {
+    margin: 0 4px;
+}
+.coupon-main span:nth-child(1) {
+    margin-bottom: 8px;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: var(--green);
+    color: #fff;
+}
+.coupon-main span:nth-child(2) {
+    display: flex;
+    align-items: flex-end;
+}
+.coupon-deadline {
+    width: 67px;
+    height: 67px;
+    border: 4px solid var(--red);
+    background: linear-gradient(to bottom, transparent 20%, var(--red) 20%, var(--red) 80%, transparent 80%);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transform: rotate(-10deg);
+    overflow: hidden;
+}
+.coupon-deadline span {
+    line-height: 12px;
+    color: #fff;
+}
+.coupon-group {
+    display: flex;
+    margin: 15px 0;
+}
+.coupon-num {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.coupon-num p {
+    margin-top: 8px;
+    justify-content: flex-end;
+    text-decoration: underline;
+}
+.coupon-card.coupon-card2 {
+    background: url(./SVG/member-system/coupon_1.svg) left top/ auto 70px no-repeat #fff;
+}
+.coupon-card.coupon-card2 .coupon-main span:first-child {
+    background-color: var(--orange);
+}
+@media screen and (min-width:991.99px) {
+    .coupon-cat {
+        padding: 0 180px;
+    }
+    .coupon-cat h3 {
+        width: 190px;
+        height: 75px;
+    }
+    h3.coupon-cat2 {
+        padding-left: 36px;
+        margin: 36px 0 18px 0;
+    }
+    .coupon-cat2-box {
+        border-radius: 9px;
+        padding: 32px;
+    }
+    .coupon-card {
+        width: 778px;
+        height: 181px;
+        background: url(./SVG/member-system/coupon_2.svg) left top/ auto 181px no-repeat #fff;
+        margin-right: 108px;
+    }
+    .coupon-main {
+        padding: 8px 0 8px 225px;
+    }
+    div.coupon-main h2 {
+        font-size: 64px;
+        margin: 15px 8px;
+    }
+    .coupon-main span:nth-child(1) {
+        padding: 8px 15px;
+    }
+    .coupon-deadline {
+        width: 155px;
+        height: 155px;
+        background: linear-gradient(to bottom, transparent 25%, var(--red) 25%, var(--red) 75%, transparent 75%);
+        margin-left: 36px;
+    }
+    .coupon-deadline span {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .coupon-group {
+        margin: 32px 0;
+    }
+    .coupon-num {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .coupon-num strong {
+        font-size: 48px;
+    }
+    .coupon-num p {
+        font-size: 26px;
+        margin-top: 36px;
+    }
+    .coupon-card.coupon-card2 {
+        background: url(./SVG/member-system/coupon_1.svg) left top/ auto 181px no-repeat #fff;
+    }
+}
+.coupon-detail {
+    padding-left: 30px;
+}
+.coupon-discri0 {
+    display: none;
+}
+.coupon-discri h3 {
+    margin: 30px 0 8px 0;
+}
+.coupon-btn {
+    display: flex;
+    justify-content: center;
+}
+.coupon-btn button {
+    width: 100px;
+    height: 35px;
+    margin: 30px 0;
+}
+@media screen and (min-width:991.99px) {
+    .coupon-detail {
+        padding-left: 72px;
+        padding-bottom: 36px;
+    }
+    .coupon-discri {
+        display: flex;
+        padding: 0 64px;
+    }
+    .coupon-arc {
+        width: 55%;
+    }
+    .coupon-discri h3 {
+        margin: 30px 0 8px 0;
+    }
+    .coupon-btn {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 40%;
+    }
+    .coupon-btn button {
+        width: 200px;
+        height: 60px;
+    }
+}
