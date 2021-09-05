@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2021-09-05 15:53:04
+-- 產生時間： 2021-09-05 16:43:46
 -- 伺服器版本： 10.4.20-MariaDB
 -- PHP 版本： 8.0.8
 
@@ -515,6 +515,19 @@ CREATE TABLE `products_follow` (
   `created_at` datetime NOT NULL DEFAULT current_timestamp() COMMENT '新增時間',
   `updated_at` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT '修改時間'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='商品追蹤';
+
+--
+-- 傾印資料表的資料 `products_follow`
+--
+
+INSERT INTO `products_follow` (`email`, `prod_id`, `created_at`, `updated_at`) VALUES
+('okihanukus@gmail.com', 6, '2021-09-05 22:29:27', '2021-09-05 22:29:27'),
+('okihanukus@gmail.com', 26, '2021-09-05 22:29:27', '2021-09-05 22:29:27'),
+('okihanukus@gmail.com', 29, '2021-09-05 22:29:27', '2021-09-05 22:29:27'),
+('okihanukus@gmail.com', 89, '2021-09-05 22:29:27', '2021-09-05 22:29:27'),
+('okihanukus@gmail.com', 145, '2021-09-05 22:29:27', '2021-09-05 22:29:27'),
+('okihanukus@gmail.com', 176, '2021-09-05 22:29:27', '2021-09-05 22:29:27'),
+('okihanukus@gmail.com', 186, '2021-09-05 22:29:27', '2021-09-05 22:29:27');
 
 -- --------------------------------------------------------
 
